@@ -5,8 +5,10 @@ function countLetters(str) {
   for (char of str) {
     if (output[char]) {
     output[char] += 1
+  } else if (char === " ") {
+
   } else {
-      output[char] = 1
+    output[char] = 1
   }
 }
   return output
